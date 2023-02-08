@@ -62,7 +62,7 @@ class Changelog:
         The SIMILARITY_THRESHOLD is an empirical value, it may have to be adjusted based
         on our experience.
         """
-        SIMILARITY_THRESHOLD = 0.89
+        SIMILARITY_THRESHOLD = 0.8
         tag_ratio = map(
             lambda tag: (SequenceMatcher(None, latest_version, tag.name).ratio(), tag),
             tags,
